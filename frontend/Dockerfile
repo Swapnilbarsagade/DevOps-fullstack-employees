@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json first to optimize caching
 COPY package*.json ./
+COPY .env ./
 
 # Install dependencies
 RUN npm install

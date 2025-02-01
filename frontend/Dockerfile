@@ -2,7 +2,7 @@
 FROM node:14.17.0-alpine
 
 # Set the working directory inside the container
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copy package.json and package-lock.json first to optimize caching
 COPY package*.json ./
